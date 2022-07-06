@@ -1,0 +1,27 @@
+this is for the functions and their uses.
+
+AC - clears the whole display box 
+<< - back or removes the last number of function  
+pi- this is the symbol for π
+e - natural base e
+rad button - on pressing the button it changes to deg ang vise versa , trigo functions take the input accordingly.
+sinh,cosh,tanh - trigo hyperbolic functions taking the input in float.
+sin,cos,tan - trigo functions , whose natural arguments are in radian but can be changes by pressing the button rad.
+pow - pow(x,y) is the exponential function and it indicates  x^y 
+sqrt - square root function , eg: sqrt(x).
+cbrt - cube root function , cbrt(x).
+log - log(x) gives the logarithm of x in natural logarithm , but base can be changed by log(y,x) which is log of y w.r.t x .
+fact - factorial of x .
+exp - exponential of x , i.e e^x.
+log10 - log10(x) is the logarithm in base 10.
+( , ) , "," , - navigation tools.
+CE - clear funtion.
+/ - division.
+x - multiplication.
+- : subsctraction.
++ : addition.
+ans - gives the ans of the previous calculation.
+= : result of the equation.
++/- : changes the sign of the number .
+
+1,2,3,4,5,6,7,8,9,0 - mathmatical numbers.

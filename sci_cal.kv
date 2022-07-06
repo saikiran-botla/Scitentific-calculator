@@ -1,0 +1,303 @@
+<Button>
+    font_size:34
+
+<MyLayout>
+
+    BoxLayout:
+        orientation:'vertical'
+        size:root.width,root.height
+
+        TextInput:
+            id:calc_input
+            text:'0'
+            halign:'right'
+            font_size:32
+            size_hint:(1,.15)
+            background_color:(1,1,1,1)
+
+        GridLayout:
+            cols:4
+            rows:120
+
+            Button:
+                text:'AC'
+                size_hint:(0.2,0.2)
+                background_normal:''
+                background_color:(1,0,0,1)
+                on_press:root.clear()
+
+            Button:
+                text:'<<'
+                size_hint:(0.2,0.2)
+                on_press:root.back()
+            
+            Button:
+                text:'pi'
+                size_hint:(0.2,0.2)
+                font_size:25
+                on_press:root.button_press('pi')
+
+            Button:
+                text:'e'
+                size_hint:(0.2,0.2)
+                font_size:25
+                on_press:root.button_press('e')
+            
+            Button:
+                id:rad
+                text:'rad'
+                size_hint:(0.2,0.2)
+                font_size:25
+                on_press:root.convert()
+
+            Button:
+                text:'sinh'
+                size_hint:(0.2,0.2)
+                font_size:25
+                on_press:root.button_press('sinh(')
+            
+            Button:
+                text:'cosh'
+                size_hint:(0.2,0.2)
+                font_size:25
+                on_press:root.button_press('cosh(')
+
+            Button:
+                text:'tanh'
+                size_hint:(0.2,0.2)
+                font_size:25
+                on_press:root.button_press('tanh(')
+            
+            Button:
+                text:'sin'
+                size_hint:(0.2,0.2)
+                font_size:25
+                on_press:root.button_press('sin(')
+
+            Button:
+                text:'cos'
+                size_hint:(0.2,0.2)
+                font_size:25
+                on_press:root.button_press('cos(')
+            
+            Button:
+                text:'tan'
+                size_hint:(0.2,0.2)
+                font_size:25
+                on_press:root.button_press('tan(')
+
+            Button:
+                text:'pow'
+                size_hint:(0.2,0.2)
+                font_size:22
+                on_press:root.button_press('pow(')
+            
+            Button:
+                text:'sqrt'
+                size_hint:(0.2,0.2)
+                font_size:25
+                on_press:root.button_press('sqrt(')
+            
+            Button:
+                text:'cbrt'
+                size_hint:(0.2,0.2)
+                font_size:25
+                on_press:root.button_press('cbrt(')
+
+            Button:
+                text:'log'
+                size_hint:(0.2,0.2)
+                font_size:25
+                on_press:root.button_press('log')
+                
+            
+            Button:
+                text:'fact'
+                size_hint:(0.2,0.2)
+                font_size:25
+                on_press:root.button_press('fact(')
+                
+
+            Button:
+                text:'exp'
+                size_hint:(0.2,0.2)
+                font_size:25
+                on_press:root.button_press('exp(')
+            
+            Button:
+                text:'log10'
+                size_hint:(0.2,0.2)
+                font_size:25
+                on_press:root.button_press('log10(')
+            
+            
+            Button:
+                text:'('
+                size_hint:(0.2,0.2)
+                font_size:25
+                on_press:root.button_press('(')
+
+            Button:
+                text:')'
+                size_hint:(0.2,0.2)
+                font_size:25
+                on_press:root.button_press(')')
+            
+            
+            Button:
+                text:'CE'
+                size_hint:(0.2,0.2)
+                on_press:root.clear()
+                background_normal:''
+                background_color:(70/255,70/255,70/255,1)
+            
+            Button:
+                text:','
+                size_hint:(0.2,0.2)
+                font_size:25
+                on_press:root.button_press(',')
+                background_normal:''
+                background_color:(70/255,70/255,70/255,1)
+
+            Button:
+                text:'/'
+                size_hint:(0.2,0.2)
+                on_press:root.math_sign('/')
+                background_normal:''
+                background_color:(70/255,70/255,70/255,1)
+            
+            Button:
+                text:'x'
+                size_hint:(0.2,0.2)
+                on_press:root.math_sign('*')
+                background_normal:''
+                background_color:(70/255,70/255,70/255,1)
+
+            Button:
+                text:'7'
+                size_hint:(0.2,0.2)
+                on_press:root.button_press('7')
+                background_normal:''
+                background_color:(70/255,70/255,70/255,1)
+                
+            
+            Button:
+                text:'8'
+                size_hint:(0.2,0.2)
+                on_press:root.button_press('8')
+                background_normal:''
+                background_color:(70/255,70/255,70/255,1)
+                
+
+            Button:
+                text:'9'
+                size_hint:(0.2,0.2)
+                on_press:root.button_press('9')
+                background_normal:''
+                background_color:(70/255,70/255,70/255,1)
+                
+            
+            Button:
+                text:'-'
+                size_hint:(0.2,0.2)
+                on_press:root.math_sign('-')
+                background_normal:''
+                background_color:(70/255,70/255,70/255,1)
+
+            Button:
+                text:'4'
+                size_hint:(0.2,0.2)
+                on_press:root.button_press('4')
+                background_normal:''
+                background_color:(70/255,70/255,70/255,1)
+                
+            
+            Button:
+                text:'5'
+                size_hint:(0.2,0.2)
+                on_press:root.button_press('5')
+                background_normal:''
+                background_color:(70/255,70/255,70/255,1)
+                
+
+            Button:
+                text:'6'
+                size_hint:(0.2,0.2)
+                on_press:root.button_press('6')
+                background_normal:''
+                background_color:(70/255,70/255,70/255,1)
+                
+            
+            Button:
+                text:'+'
+                size_hint:(0.2,0.2)
+                on_press:root.math_sign('+')
+                background_normal:''
+                background_color:(70/255,70/255,70/255,1)
+
+            Button:
+                text:'1'
+                size_hint:(0.2,0.2)
+                on_press:root.button_press('1')
+                background_normal:''
+                background_color:(70/255,70/255,70/255,1)
+                
+            
+            Button:
+                text:'2'
+                size_hint:(0.2,0.2)
+                on_press:root.button_press('2')
+                background_normal:''
+                background_color:(70/255,70/255,70/255,1)
+                
+
+            Button:
+                text:'3'
+                size_hint:(0.2,0.2)
+                on_press:root.button_press('3')
+                background_normal:''
+                background_color:(70/255,70/255,70/255,1)
+                
+            
+            Button:
+                text:'ans'
+                size_hint:(0.2,0.2)
+                font_size:25
+                on_press:root.give_back()
+                background_normal:''
+                background_color:(70/255,70/255,70/255,1)
+            
+            Button:
+                text:'+/-'
+                size_hint:(0.2,0.2)
+                on_press:root.sign_change()
+                background_normal:''
+                background_color:(70/255,70/255,70/255,1)
+                
+            
+            Button:
+                text:'0'
+                size_hint:(0.2,0.2)
+                on_press:root.button_press('0')
+                background_normal:''
+                background_color:(70/255,70/255,70/255,1)
+                
+
+            Button:
+                text:'.'
+                size_hint:(0.2,0.2)
+                on_press:root.point()
+                background_normal:''
+                background_color:(70/255,70/255,70/255,1)
+                
+            
+            Button:
+                text:'='
+                size_hint:(0.2,0.2)
+                on_press:root.equal()
+        
+        Label:
+            size_hint:(1,0.01)
+            text:' '
+            font_size:32
+                
